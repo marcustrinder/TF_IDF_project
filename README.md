@@ -3,7 +3,11 @@
 A full TF-IDF implementation written in Python **with no pre-built TF-IDF libraries**.  
 Python version used: 3.11.9  
 Dependancies: NLTK, Pandas  
+
 All TF, IDF, and TF-IDF calculations are performed manually using standard Python, as required by the assignment brief.
+
+To run: python main.py - Runs all preprocessing steps  
+python mainv2.py - Can configure which preprocessing steps are run for comparison, see below.  
 
 The project also supports a **configurable preprocessing pipeline**, allowing you to choose whether to apply:
 
