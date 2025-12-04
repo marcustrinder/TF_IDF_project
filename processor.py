@@ -51,14 +51,14 @@ def tokenize_corpus(corpus):
     """
     Takes a list of documents (strings) and returns
     a list of token lists (list of words per document).
-    Uses NLTK's TreebankWordTokenizer (no punkt download required).
+    Uses NLTK's TreebankWordTokenizer.
     """
     tokenizer = TreebankWordTokenizer()
 
     tokenized_docs = []
     for doc in corpus:
         tokens = tokenizer.tokenize(doc)
-        # Optional: normalize to lowercase
+        # to lower
         tokens = [t.lower() for t in tokens]
         tokenized_docs.append(tokens)
     return tokenized_docs
@@ -66,7 +66,7 @@ def tokenize_corpus(corpus):
 
 def remove_stopwords(tokenised_corpus):
     """
-    Remove stopwords using a built-in stopword list (no NLTK download required).
+    Remove stopwords using a built-in stopword list (editable).
     """
     cleaned_corpus = []
     for tokens in tokenised_corpus:

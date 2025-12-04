@@ -53,4 +53,6 @@ tf_idf_items, tf_idf_corpus = processor.compute_tfidf_from_csv(
     tfidf_path
 )
 
-data_preview.preview_tf_idf(tfidf_path)
+data_preview.preview_tf_idf_top(tfidf_path)
+data_preview.preview_tf_idf_bottom(tfidf_path)
+
